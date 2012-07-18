@@ -1,0 +1,21 @@
+# Copyright (c) 2012, 2012 All Rights Reserved, Marek Burza (mkburza@gmail.com)
+#
+# This is confuguration file of the Bitcoin mining pool proxy service
+# It establishes that static Flash files are stored in swf subdirectory,
+# static HTML files in html subdirectory and that there is one main handler
+# for dynamic requests
+#
+application: bitcoin-mining-pool-proxy
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /swf
+  static_dir: swf
+
+- url: /html
+  static_dir: html
+
+- url: /.*
+  script: bitcoin-mining-pool-proxy.py
