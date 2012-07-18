@@ -1,4 +1,6 @@
-# Copyright (c) 2012, 2012 All Rights Reserved, Marek Burza (mkburza@gmail.com)
+# Copyright (C) 2012 Marek Burza
+#
+# Flash Player Bitcoin Miner
 #
 # This is the Bitcoin mining pool proxy service.
 # Flash player code cannot connect to anything except for the originating host
@@ -10,6 +12,18 @@
 # The HTTP POST requests are simply channeled between the Flash Player file
 # and the mining pool configured in the HTML file.
 #
+# This code is free software: you can redistribute it and/or modify it under
+# the terms of the GNU Lesser General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option)
+# any later version.
+#
+# This code is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+# more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with code. If not, see <http://www.gnu.org/licenses/>.
 
 from google.appengine.api             import urlfetch
 from google.appengine.ext             import webapp
